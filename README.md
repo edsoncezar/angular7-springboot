@@ -17,4 +17,8 @@ users_database
 
 There are many ways to create a Spring Boot application. The simplest way is to use Spring Initializrat http://start.spring.io/, which is an online Spring Boot application generator.
 
+I used part of this tutorial as reference:
+
+https://www.javaguides.net/2019/02/spring-boot-2-angular-7-crud-example-tutorial.html
+
 
