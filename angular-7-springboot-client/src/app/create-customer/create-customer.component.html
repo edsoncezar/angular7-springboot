@@ -1,0 +1,31 @@
+<h3>Create Customer</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">First Name</label>
+      <input type="text" class="form-control" id="firstName" required [(ngModel)]="customer.firstName" name="firstName">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Credit Limit</label>
+      <input type="number" class="form-control" id="creditLimit" required [(ngModel)]="customer.creditLimit" name="creditLimit">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Credit Risk</label>
+      <select name="creditRisk" class="form-control" id="creditRisk" ng-model="customer.creditRisk">
+          <option value="A">Without Interest Rate</option>
+          <option value="B">10% Interest Rate</option>
+          <option value="C">20% Interest Rate</option>
+        </select>
+   
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+  <!-- <button class="btn btn-success" (click)="newCustomer()">Add</button> -->
+</div>
