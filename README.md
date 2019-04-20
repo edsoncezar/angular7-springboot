@@ -1,7 +1,7 @@
 # angular7-springboot
 Angular 7 + Spring Boot 2 + Spring Data JPA + MySQL
 
-Basically, I create two projects:
+Basically, I created two projects:
 
 springboot2-jpa-crud: This project is a simple Customer Credit System using Spring Boot 2, JPA and MySQL as a database and RESTFul APIs.
 
